@@ -1,0 +1,14 @@
+{
+    "welcome" : "bonjour",
+    "About" : "À propos",
+    "Skills" : "Competences",
+    "Projects" : "Projets",
+    "Educations" : "Etudes",
+    "Contact": "Contact Moi",
+    "title" : "Mouad Echehaibi",
+    "bio" : "Developeur full stack",
+    "description" : "Développeur Full Stack , animé par la créativité et la passion pour l’univers digital. Inspiré par l’imaginaire et l’innovation, je transforme des idées en expériences web et cherche continuellement à apprendre et repousser les limites du développement.",
+    "en" : "Anglais",
+    "fr" : "Francais",
+    "ar" : "Arabe"
+}

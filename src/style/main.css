@@ -1,0 +1,47 @@
+@custom-variant dark (&:where(.dark, .dark *));
+@import "tailwindcss";  
+
+#navBar {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+.flexy{  
+ justify-content: center;  
+ align-items: center;  
+ display: flex;  
+}
+/* hero */
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+
+.michroma{
+  /* font-family: "Michroma";    */
+    /* font-size: 30px; */
+    font-family: "Playwrite NO", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.digit {
+  animation: waveColor 3s linear infinite;
+  will-change: transform, color;
+}
+
+@keyframes waveColor {
+  0%  {color: #404040;text-shadow: none;transform: scale(1);}
+  40% {color: #404040;text-shadow: none;}
+  50% {color: #39FF14;text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14;}
+  55% {color: #7FFF00;}
+  60% {color: #00FF7F;}
+  100%{color: #404040;text-shadow: none;}
+}
+
+
