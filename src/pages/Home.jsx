@@ -6,7 +6,7 @@ import Skills from "@/components/home/Skills";
 import Hero from "@/components/home/Hero";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
-import Projects from "@/components/home/Projects";
+import Projects from "@/components/home/Projects.jsx";
 import Path from "@/components/home/Path";
 
 gsap.registerPlugin(ScrollSmoother,ScrollTrigger)
