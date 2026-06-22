@@ -2,12 +2,13 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Header from "@/components/base/Header";
-import Skills from "@/components/home/Skills";
 import Hero from "@/components/home/Hero";
+import Path from "@/components/home/Path";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
-import Projects from "@/components/home/Projects.jsx";
-import Path from "@/components/home/Path";
+import Projects from "@/components/home/projects";
+import Skills from "@/components/home/skills";
 
 gsap.registerPlugin(ScrollSmoother,ScrollTrigger)
 
