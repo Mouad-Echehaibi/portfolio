@@ -47,8 +47,8 @@ export default function Header({smootherRef}){
         .from(".M1", { scaleY: 0,y:5, duration: 1 , ease:"power1.out",delay:1,},"<")
         .from(".M2", { scaleY: 0,y:5, duration: .8, ease:"power1.out"}, "<0.2")
         .from(".M3", { scaleY: 0,y:5, duration: .5, ease:"power1.out"}, "<0.1")
-        .from(".M4", { scaleX: 0,y:5, duration: .5, ease:"power1.out"}, "<0.1")
-        .from(".MP", {x: centerX - logoRect.left,y: centerY - logoRect.top,scale: 2,duration: 1.2,ease: "power3.inOut"})
+        .from(".M4", { scaleX: 0, duration: .5, ease:"power1.out"}, "<0.4")
+        .from(".MP", {x: centerX - logoRect.left,y: centerY - logoRect.top,scale: 2,duration: 1.2,ease: "power3.inOut"},"<")
         .from("#RightNav",{autoAlpha:0 , x:50, duration:1.2, ease:"power1.out"})
     },{scope:header})
 
@@ -62,14 +62,14 @@ export default function Header({smootherRef}){
                 </section>
             </div> */}
             <section className="MP absolute h-[3vh] w-[4vw] items-end gap-[10%] grid grid-cols-[1fr_1fr_3fr]">
-                <div className="M1 origin-bottom h-[50%] bg-white z-2"></div>
-                <div className="M2 origin-bottom h-[75%] bg-white z-2"></div>   
+                <div className="M1 origin-bottom h-[50%] bg-black dark:bg-white z-2"></div>
+                <div className="M2 origin-bottom h-[75%] bg-black dark:bg-white z-2"></div>   
                 <div className="h-full z-2 grid grid-cols-[1fr_2fr]">
-                    <div className="M3 origin-bottom h-full bg-white z-2"></div>  
-                    <div className="M4 h-full z-2 grid grid-rows-3 gap-[20%]">
-                        <div className="origin- bg-white"></div>
-                        <div className="origin- bg-white"></div>
-                        <div className="origin- bg-white"></div>
+                    <div className="M3 origin-bottom h-full bg-black dark:bg-white z-2"></div>  
+                    <div className="M4 origin-left h-full z-2 grid grid-rows-3 gap-[20%]">
+                        <div className="bg-black dark:bg-white"></div>
+                        <div className="bg-black dark:bg-white"></div>
+                        <div className="bg-black dark:bg-white"></div>
                     </div>  
                 </div>
             </section>

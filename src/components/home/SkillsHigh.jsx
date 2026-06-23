@@ -34,7 +34,7 @@ export default function Skills(){
 
     const skillsGrid = (skillsArray) => {
         return skillsArray.map(skill => (
-            <div key={skill.id} className={`skill-item p-3 flexy rounded-lg border border-cyan-500 bg-cyan-950/50`}>
+            <div key={skill.id} className={`skill-item p-3 flexy rounded-lg border border-cyan-200  bg-cyan-950/90 dark:bg-cyan-950/50`}>
                 {/* <img src={skill.image} alt={skill.name} className="w-full h-fit" /> */}
                 <span>{skill.image}</span>
             </div>

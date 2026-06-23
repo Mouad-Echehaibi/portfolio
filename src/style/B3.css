@@ -19,6 +19,12 @@
 
 .noise4{
   background-image:
+    radial-gradient(rgba(91, 91, 91, 0.626) 1px, transparent 1px);
+
+  background-size:24px 24px;
+}
+.dark .noise4{
+  background-image:
     radial-gradient(rgba(255,255,255,.12) 1px, transparent 1px);
 
   background-size:24px 24px;

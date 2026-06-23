@@ -60,22 +60,19 @@ export default function Path() {
   }, { scope: path });
 
   return (
-    <main ref={path} className="relative noise4 overflow-hidden w-full h-screen">
+    <main ref={path} className="relative noise4 overflow-hidden w-full h-scree">
 
       <h1 className="text-5xl font-thin flexy w-full absolute top-10">{t("Education")}</h1>
 
-      <div id="pathLine" className="absolute place-self-center bottom-5 w-[70%] z-50">
-        <div className="h-2 bg-neutral-700 rounded-full overflow-hidden">
-          <div ref={lineFill} className="h-full w-full bg-blue-500 scale-x-0"></div>
-        </div>
-        <div className="flex justify-between mt-4 text-xl font-bold"><span>2022</span><span>2023</span><span>2024</span><span>2025</span></div>
+      <div id="pathLine" className="absolute w-[90%] h-0.5 bg-neutral-400 dark:bg-neutral-700 place-self-center rounded-full overflow-hidden bottom-5 z-50">
+          <div ref={lineFill} className="h-full w-full bg-cyan-800 dark:bg-cyan-500 scale-x-0"></div>
       </div>
 
       <div id="horizontalWrapper" className="flex w-fit">
         {paths.map((e)=>
-          <section key={e.id} className={`panel w-screen overflow-hidden h-screen flexy`}>
+          <section key={e.id} className={`panel w-screen overflow-hidden h-screen flexy text-white`}>
             <div className="w-[70%] h-[50%] relative flexy overflow-hidden">
-              <img src={e.image} className="absolute size-full rounded-3xl"/>
+              <img src={e.image} className="absolute size-full rounded-3xl brightness-50 dark:brightness-100"/>
               <h1 className="year text-7xl mb-10">{e.year}</h1>
               <p className="content">{e.description}</p>
             </div>

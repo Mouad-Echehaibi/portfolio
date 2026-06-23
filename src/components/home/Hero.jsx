@@ -15,19 +15,24 @@ export default function Hero() {
     const BioRef = useRef();
 
     useGSAP(()=>{       
-        gsap.to('#Laptop',{scaleX:.7,autoAlpha:0,ease:"power1.in",scrollTrigger:{trigger: '#Laptop', start:"top top",end:"+=900",scrub: true}});
+        gsap.to('#Laptop',{scaleX:.5,autoAlpha:0,ease:"power1.in",scrollTrigger:{trigger: '#Laptop', start:"top top",end:"+=700",scrub: true}});
         const split = SplitText.create(BioRef.current, { type: "words" });
-        gsap.from(split.words, { opacity: 0, y: 20, stagger: 0.03, duration: 1,scrollTrigger:{trigger: BioRef.current, start:"top center",end:"+=200",scrub: true}});
+        gsap.from(split.words, { opacity: 0, y: 20, stagger: 0.03, duration: 1,scrollTrigger:{trigger: BioRef.current, start:"top bottom",end:"+=700",scrub: true}});
         const tl = gsap.timeline({ease:"power1.out"})
         .from("#HeroName",  {y:20,autoAlpha:0,duration:.5,delay:3},0)
         .from("#HeroTitle", {y:20,autoAlpha:0,duration:.5},"<+.3")
-        .from("#Laptop",    {y:'50vh',duration:1,},"<")
+        .from("#Laptop",    {y:'60vh',duration:1},"<")
     },{scope: Ref_Hero})
     
     return(
         <div ref={Ref_Hero} className="min-h-[200vh] w-full flex justify-center relative">
             {/* <img id="Laptop" src={`${theme==="dark" ? "image/bg-pc-1.jpg" : "image/section-hero-laptop-white.png"} `} alt="bg laptop" className="size-full absolute -z-1"/> */}
-            <div id="Laptop" className="size-full absolute -z-1 bg-[url('image/section-hero-laptop-white.png')] dark:bg-[url('image/bg-pc-1.jpg')] bg-cover bg-center"/>
+            <div id="Laptop" className="size-full flex justify-center py-[60vh] absolute -z-1 bg-[url('image/section-hero-laptop-white.png')]  bg-cover bg-center">
+                <div className="p-2 flex items-center text-white border border-neutral-300 gap-2 px-4 h-fit w-fit rounded-full bg-cyan-900">
+                    <span className="size-2 bg-cyan-200 rounded-full"></span>
+                    Open to Intership opportunities
+                </div>
+            </div>
             {/* <img id="Laptop" src="image/section-hero-laptop-white.png" alt="bg laptop" className="size-full absolute -z-1 dark:brightness-50"/> */}
 
             
@@ -46,13 +51,10 @@ export default function Hero() {
                     </div>
                 </div>
                 <h2  id="HeroTitle" className="text-6xl w-full flexy flex-col! font-thin">
-                    <div className="whitespace-pre-line text-lg font-semibold text-red-500">
-                        {t("soon")}
-                    </div>
                     {t("Title")}
                 </h2>
             </div>
-            <div ref={BioRef} className="text-4xl absolute bottom-[30vh] px-30 font-thin">
+            <div ref={BioRef} className="text-4xl absolute bottom-[15vh] px-30 font-thin">
                 {t("bio")}
             </div>
 
