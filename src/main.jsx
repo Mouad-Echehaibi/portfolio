@@ -4,6 +4,7 @@ import '@/provider/i18n';
 import { getTheme, setTheme } from "@/provider/theme";
 import '@/style/main.css'
 import '@/style/hero.css'
+import '@/style/B3.css'
 
 setTheme(getTheme());
 

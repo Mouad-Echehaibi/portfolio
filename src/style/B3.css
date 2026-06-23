@@ -24,45 +24,13 @@
   background-size:24px 24px;
 }
 
-/* .dark .noise5 {
-  position: relative;
-  overflow: hidden;
-  background: #050505;
+.dark .noise5{
+  background:
+    radial-gradient(circle at 20% 20%, #07001a 0%, transparent 40%),
+    radial-gradient(circle at 80% 30%, #150012 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, #000000 0%, transparent 40%),
+    #0a0a0a;
 }
-
-.dark .noise5::before{
-  content:"";
-  position:absolute;
-  inset:-20%;
-  background: radial-gradient(ellipse at top center, rgba(154, 132, 255, 0.45) 0%, rgba(154, 132, 255, 0.15) 35%, transparent 75%);
-  filter: blur(80px);
-  pointer-events:none;
-} */
-.dark .noise5 {
-  background: radial-gradient(ellipse 100% 100% at 50% 50%,rgba(58, 48, 133, 0.35) 0%,rgba(46, 35, 119, 0.15) 30%,black 80%),
-              linear-gradient(180deg,#15111f 0%,#08080c 40%,#030305 100%);
-  /* filter: blur(10px); */
-}
-.dark .noise5::before{
-  content:"";
-  position:absolute;
-  height: 100%;
-  aspect-ratio: 1;
-  background: radial-gradient(ellipse at top left , #b6574b 0%, #3b1a17 35%, transparent 75%);
-  filter: blur(60px);
-  pointer-events:none;
-} 
-.dark .noise5::after{
-  content:"";
-  position:absolute;
-  right: 0%;
-  height: 100%;
-  aspect-ratio: 1;
-  background: radial-gradient(ellipse at top right, #6343b6 0%, #000544 35%, transparent 75%);
-  filter: blur(60px);
-  pointer-events:none;
-} 
-
 .noise5{
   background:
     radial-gradient(circle at 20% 20%, #b69dfb 0%, transparent 40%),

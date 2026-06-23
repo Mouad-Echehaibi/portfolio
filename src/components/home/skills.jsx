@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const Skills = () => {
-     const Ref_skills = useRef()
+    const Ref_skills = useRef()
     const { t, i18n } = useTranslation();
 
     const frontend_Skills = [
@@ -44,9 +44,9 @@ const Skills = () => {
     useGSAP(() => {
         const tl = gsap.timeline({ scrollTrigger: { trigger: Ref_skills.current, start: "center center", end: "+=4000", scrub: 1, pin: true, } })
         // .to("#skills-title",{scale: .9,y:-50,autoAlpha: 0,duration: 0.2},0)
-        .from("#frontendLogo",{scale: 2,y: '50vh', x:150, duration: 0.25},0.)
-        .from("#backendLogo",{scale: 2,y: '50vh', duration: 0.25},"<")
-        .from("#databaseLogo",{scale: 2,y: '50vh', x: -150, duration: 0.25},"<")
+        .from("#frontendLogo",{scale: 2,y: '20vh', x:100, duration: 0.25},0.)
+        .from("#backendLogo",{scale: 2,y: '20vh', duration: 0.25},"<")
+        .from("#databaseLogo",{scale: 2,y: '20vh', x: -100, duration: 0.25},"<")
 
         .from("#frontendText", {y: '15vh',opacity: 0,duration: 0.1 ,ease: "power3.out"},0.4)
         .from("#backendText", {y: '15vh',opacity: 0,duration: 0.1,ease: "power3.out"},0.47)
@@ -63,7 +63,7 @@ const Skills = () => {
 
 
     return (
-        <div ref={Ref_skills} className='w-full h-fit flex flex-col gap-[15vh]'>
+        <div ref={Ref_skills} className='w-full md:w-[80%] lg:w-[80%] noise4 md:p-5 lg:p-5 md:rounded-3xl lg:rounded-3xl md:border lg:border border-neutral-800 place-self-center h-fit flex flex-col gap-[15vh] mt-50'>
             <h1 className='w-full flexy text-5xl font-thin'>{t("Skills")}</h1>
             <div className="w-full p-4 md:px-25 lg:px-25 h-[60vh] lg:h-[60%] md:h-[60%] relative grid grid-cols-[auto_1fr_auto_1fr_auto] text-black text-sm md:text-xl lg:text-xl">
                 <div className="flex flex-col gap-4 items-center">

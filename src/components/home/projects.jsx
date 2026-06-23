@@ -27,9 +27,9 @@ export default function Projects() {
 
   return (
     // <main ref={projects} className="min-h-[300vh] w-full grid grid-rows-[auto_1fr] pb-20 relative justify-center">
-    <main ref={projects} className="w-full h-fit gap-20 mt-20 py-40 relative flex flex-col items-center noise4 justify-around">
+    <main ref={projects} className="w-full h-fit gap-20 mt-20 py-40 relative flex flex-col items-center noise3 justify-around">
         <h1 className="text-5xl font-thin">{t("Projects")}</h1>
-        <section ref={projects1} className="h-[50vh] w-[70vw] rounded-3xl bg-green-900/80 flexy justify-between! p-10">
+        <section ref={projects1} className="h-[50vh] w-[70vw] rounded-3xl bg-green-900 shadow-[0_0_5px_green] flexy justify-between! p-10">
             <div className="h-full w-full flex flex-col justify-around">
                 <h1 className="text-4xl">Youchef</h1>
                 <span>03/2025 – 04/2025</span>
@@ -39,7 +39,7 @@ export default function Projects() {
             </div>
             <img ref={projects1_image} src="/image/section-project-youchef.png" className="bg-contain h-[80%] place-self-center rounded-xl" />
         </section>
-        <section ref={projects2} className="h-[50vh] w-[70vw] rounded-3xl bg-neutral-800/60 flexy justify-between! p-10">
+        <section ref={projects2} className="h-[50vh] w-[70vw] rounded-3xl bg-neutral-800 shadow-[0_0_5px_gray] flexy justify-between! p-10">
             <div className="h-full w-full flex flex-col justify-around">
                 <h1 className="text-4xl">Chrono</h1>
                 <span>02/2025 – 05/2025</span>

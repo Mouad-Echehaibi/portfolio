@@ -4,31 +4,36 @@ import { useGSAP } from "@gsap/react";
 import Header from "@/components/base/Header";
 import Hero from "@/components/home/Hero";
 import Path from "@/components/home/Path";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import Projects from "@/components/home/projects";
-import Skills from "@/components/home/skills";
+import SkillsHigh from "@/components/home/SkillsHigh";
+import Skills from "@/components/home/Skills";
+import Footer from "@/components/base/Footer";
 
-gsap.registerPlugin(ScrollSmoother,ScrollTrigger)
+
+gsap.registerPlugin(ScrollTrigger,)
 
 export default function Home(){
     const Ref_home = useRef();
+    const smootherRef = useRef();
 
     useGSAP(() => { 
-        ScrollSmoother.create({ smooth: .5 }); 
+    //     smootherRef.current = ScrollSmoother.create({ smooth: .5 }); 
+            smootherRef.current = ScrollSmoother.create({}); 
+            smootherRef.current.paused(true);
     },{ scope: Ref_home});
 
     return (
         <div ref={Ref_home}>
-            <Header />
-            {/* <HeaderMobile /> */}
+            <Header smootherRef={smootherRef} />
             <div id="smooth-content">
                 <Hero />
                 <Skills />
+                {/* <SkillsHigh /> */}
                 <Projects />
-                <Path />
-                <div className="h-[50vh] w-full"></div>
+                <Path />    
+                <Footer />
             </div>
         </div>
     );

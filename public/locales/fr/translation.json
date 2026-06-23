@@ -5,9 +5,9 @@
     "Projects" : "Projets",
     "Educations" : "Etudes",
     "Contact": "Contact Moi",
-    "title" : "Mouad Echehaibi",
-    "bio" : "Developeur full stack",
-    "description" : "Développeur Full Stack , animé par la créativité et la passion pour l’univers digital. Inspiré par l’imaginaire et l’innovation, je transforme des idées en expériences web et cherche continuellement à apprendre et repousser les limites du développement.",
+    "Name" : "Mouad Echehaibi",
+    "Title" : "Developeur full stack",
+    "bio" : "Développeur Full Stack passionné par le développement web moderne et la création d’expériences numériques interactives. Curieux et créatif, j’aime concevoir des applications performantes, apprendre de nouvelles technologies et relever des défis techniques.",
     "en" : "Anglais",
     "fr" : "Francais",
     "ar" : "Arabe"
