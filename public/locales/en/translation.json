@@ -11,7 +11,7 @@
     "en" : "English",
     "fr" : "Frensh",
     "ar" : "Arabic",
-
+    "soon": "Work in Progress 🚀\nI'm continuously improving this portfolio and adding new projects.\nStay tuned for updates.",
 
     "project_youchef_bio": "Plateforme collaborative de partage de recettes. Rôles, likes, commentaires, interface admin  Application web collaborative de partage de recettes de cuisine réalisé en équipe de 3 personnes avec gestion du code en collaborationvia GitHub Fonctionnalités: rôles (admin,client,fournisseur), système likes-commentaires, interface admin.",
     "project_chrono_bio": "Synchronisation automatique en temps réel d’onglets, sections, notes textuelles et tableaux dans une application web d’organisation personnelle. Interface fluide et responsive connectée à une base de données. "

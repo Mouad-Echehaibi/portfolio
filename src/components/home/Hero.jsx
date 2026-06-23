@@ -29,7 +29,8 @@ export default function Hero() {
             {/* <img id="Laptop" src={`${theme==="dark" ? "image/bg-pc-1.jpg" : "image/section-hero-laptop-white.png"} `} alt="bg laptop" className="size-full absolute -z-1"/> */}
             <div id="Laptop" className="size-full absolute -z-1 bg-[url('image/section-hero-laptop-white.png')] dark:bg-[url('image/bg-pc-1.jpg')] bg-cover bg-center"/>
             {/* <img id="Laptop" src="image/section-hero-laptop-white.png" alt="bg laptop" className="size-full absolute -z-1 dark:brightness-50"/> */}
-        
+
+            
 
             {/* <div className="absolute w-[80%] h-[80vh] noise5 top-[60vh]"></div> */}
             {/* <div className="absolute w-[80%] h-[80vh] border border-cyan-500 top-[60vh]"></div> */}
@@ -40,10 +41,16 @@ export default function Hero() {
                         <div className=" absolute -top-1/2 -left-1/2 h-[200%] w-[200%] rotate-12 bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.08),transparent)]" />
                         <div className="relative z-10 py-4 px-15">
                             <h1 className="text-lg">{t("Name")}</h1>
+                            
                         </div>
                     </div>
                 </div>
-                <h2  id="HeroTitle" className="text-6xl w-min font-thin">{t("Title")}</h2>
+                <h2  id="HeroTitle" className="text-6xl w-full flexy flex-col! font-thin">
+                    <div className="whitespace-pre-line text-lg font-semibold text-red-500">
+                        {t("soon")}
+                    </div>
+                    {t("Title")}
+                </h2>
             </div>
             <div ref={BioRef} className="text-4xl absolute bottom-[30vh] px-30 font-thin">
                 {t("bio")}
