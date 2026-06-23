@@ -7,7 +7,7 @@ import { getSVG } from '@/provider/PackSvg';
 gsap.registerPlugin(ScrollTrigger);
 
 
-const Skills = () => {
+export default function Skills(){
     const Ref_skills = useRef()
     const { t, i18n } = useTranslation();
 
@@ -104,4 +104,3 @@ const Skills = () => {
     );
 }
 
-export default Skills;
