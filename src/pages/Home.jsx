@@ -7,9 +7,8 @@ import Path from "@/components/home/Path";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import Projects from "@/components/home/projects";
-import SkillsHigh from "@/components/home/SkillsHigh";
-import Skills from "@/components/home/Skills";
 import Footer from "@/components/base/Footer";
+import Skills from "@/components/home/SkillsHigh";
 
 
 gsap.registerPlugin(ScrollTrigger,)
@@ -29,8 +28,8 @@ export default function Home(){
             <Header smootherRef={smootherRef} />
             <div id="smooth-content">
                 <Hero />
+                {/* <Skills /> */}
                 <Skills />
-                {/* <SkillsHigh /> */}
                 <Projects />
                 <Path />    
                 <Footer />
